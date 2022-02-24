@@ -1,5 +1,5 @@
 # TsodingPublic
  Tsoding Sessions :)
 ----Day 1----
-Notes:
+Notes: created hello world in c++!
 ---SYLSC ftg----
