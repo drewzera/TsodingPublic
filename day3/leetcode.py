@@ -52,3 +52,33 @@ def unique_in_order(iterable):
 
 
 print(unique_in_order('AAAABBBCCDAABBB'))
+
+def is_valid_walk(walk):
+    #any valid array has to be less than len 10
+    directions = ['n','e','s','w']
+    #s has to follow a n , w must follow e in order to return to origin. 
+    seen = []
+    if len(walk) > 10:
+        return False
+    for i in range(len(walk)):
+        j = i + 1
+        while(j <= len(walk) - 1):
+            if walk[i] == 'n' and walk[j] == 's':
+                walk.remove(walk[i])
+                walk.remove(walk[j])
+            if walk[i] == 'e' and walk[j] == 'w':
+                walk.remove(walk[i])
+                walk.remove(walk[j])
+            if walk[i] == 'w' and walk[j] == 'e':
+                walk.remove(walk[i])
+                walk.remove(walk[j])
+            if walk[i] == 's' and walk[j] == 'n':
+                walk.remove(walk[i])
+                walk.remove(walk[j])
+    if walk == []:
+        return True
+    else:
+        return False
+
+
+print(is_valid_walk(['n','s','n','s','n','s','n','s','n','s']))

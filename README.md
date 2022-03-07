@@ -11,3 +11,7 @@ Created and hostd a chatroom website using infinityFree, http://putin.great-site
 Don't know how long it will stay up lmfao but pretty cool i think
 
 ----SYLSC ftg ----
+
+----Day3 ----
+Code Wars is fun
+-----------------
