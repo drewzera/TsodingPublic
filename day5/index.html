@@ -15,24 +15,29 @@
                 <a href="/">Home</a>
             </div>
             <div class="profile"> Your Profile </div>
-            <dive class="new counter"> New Counter ++++</div>
+            <button class="new-counter" onclick="addRow()"> New Counter ++++ </button>
         </div>
     </nav>
     <!--Hero-->
-    <table>
+    <table id="addRef" contenteditable="true">
+        <div class="div1">
         <tr>
-        <td>First Item</td>
-        <td>Explain First Item</td>
+        <td>
+            <h1>First Item</h1>
+        </td>
+        <td>lorem</td>
         <td><h1 class="counter-display">(..)</h1></td>
         <td><button class="counter-up">UP</button></td>
         <td><button class="counter-down">DOWN</button></td>
         </tr>
+        </div>
 
+        <div class="div2">
         <tr>
-            <td>Second Item</td>
+            <td><h1>Second Item</h1></td>
             <td>Lorem ipsum dolor sit</td>
         </tr>
-
+        </div>
     </table>
 </body>
 <script src="app.js"></script>
